@@ -1,2 +1,12 @@
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Display a count of how many <a href="/admin/products">PRODUCTS</a> are in the database:
+    <span class="badge badge-primary badge-pill"><%=@product_count%></span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Display a count of how many categories are in the database:
+    <span class="badge badge-primary badge-pill"><%=@category_count%></span>
+  </li>
+</ul>
