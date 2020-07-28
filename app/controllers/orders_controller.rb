@@ -1,8 +1,9 @@
 class OrdersController < ApplicationController
-
+# find the id in params for order
   def show
     @order = Order.find(params[:id])
-  end
+
+end
 
   def create
     charge = perform_stripe_charge
