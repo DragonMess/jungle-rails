@@ -1,28 +1,8 @@
 class OrdersController < ApplicationController
-
+# find the id in params for order
   def show
     @order = Order.find(params[:id])
 
-    # puts "ROHIT " 
-    # puts @order.line_items.inspect
-
-#     @order_details = @order.line_items.each do |item.product.price*(item[:quantity].to_i)|
-#       # item.product
-#      @total_order =  item++
-# # { image:item.product.image,email:item.order.email,quantity:item.quantity, item_price_cents:item.item_price_cents,
-# #   name:item.product.name, description:item.product.description, order:item.order.total_cents}
-#   # puts item.product.image
-#  end
-# puts @total_order
-# @total_order = Order.find()
-
-
-
-  # @total_order = @order.line_items.map {|entry| entry[:product].price_cents * entry[:quantity]}.sum
-
-#   @total_order =@order.line_items.map do |item|    
-# ((item.quantity).to_i*item.item_price_cents)
-#   end
 end
 
   def create

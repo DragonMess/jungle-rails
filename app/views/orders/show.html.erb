@@ -17,16 +17,12 @@
       </thead>
       <tbody>
       <tbody>
-  <%#raise @order_details.inspect %> 
-
-  <% @order.line_items.each do | item |  %>
-  <%= render 'item_details', product:item.product,name:item.product[:name],description:item.product[:description], item_price_cents:item[:item_price_cents],quantity:item[:quantity].to_i  %> 
-  <%#@total_order = item.product.price*(item[:quantity].to_i) + item.product.price*(item[:quantity].to_i) %>  
-  <% @order_total = item.order.total_cents%>  
-  <% end%>
-
-
-
+      <%#Loop to the line_items to have the product and order details %> 
+      <% @order.line_items.each do | item |  %>
+      <%= render 'item_details', product:item.product,name:item.product[:name],description:item.product[:description], item_price_cents:item[:item_price_cents],quantity:item[:quantity].to_i  %> 
+      <% @order_total = item.order.total_cents%>  
+      <% @order_email = item.order.email%>
+      <% end%>
       </tbody>
       <tfoot>
         <tr>
@@ -39,6 +35,7 @@
         </tr>
       </tfoot>
     </table>
+    <div>Email :<%= @order_email%> </div>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
