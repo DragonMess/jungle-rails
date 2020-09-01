@@ -2,7 +2,6 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
-
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -22,6 +21,71 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-* PostgreSQL 9.x
-* Stripe
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
+- bcrypt 3.1.7
+
+## Test Dependencies
+
+- rspec-rails
+- capybara
+- poltergeist
+
+## Final Product
+
+Home - Products
+
+!["Load"](./Docs/Home.png)
+
+Categories - Apparel
+
+!["Load"](./Docs/Home-Apparel.png)
+
+Categories - Furniture
+
+!["Load"](./Docs/Home_Furniture.png)
+
+Categories - Electronics
+
+!["Load"](./Docs/Home-Electronics.png)
+
+About
+
+!["Load"](./Docs/About.png)
+
+Cart
+
+!["Load"](./Docs/Cart.png)
+
+Cart - checkout
+
+!["Load"](./Docs/checkout-Cart.png)
+
+Admin - options
+
+!["Load"](./Docs/Admin-options.png)
+
+Admin - Dashboard
+
+!["Load"](./Docs/Admin-Dashboard.png)
+
+Admin - Products
+
+!["Load"](./Docs/Admin-Products.png)
+
+Admin - Categories
+
+!["Load"](./Docs/Admin-Categories.png)
+
+Login
+
+!["Load"](./Docs/Login.png)
+
+Sign up
+
+!["Load"](./Docs/Sign-Up.png)
+
+Signed
+
+!["Load"](./Docs/Signed.png)
