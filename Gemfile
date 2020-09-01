@@ -51,7 +51,11 @@ group :development, :test do
     gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main'
   end
 end
-
+group :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
